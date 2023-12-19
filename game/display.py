@@ -1,4 +1,13 @@
 def get_hangman(life):
+    """
+    Returns the ASCII art representation of the hangman based on the remaining life.
+
+    Args:
+        life (int): The remaining life of the hangman.
+
+    Returns:
+        str: The ASCII art representation of the hangman.
+    """
     if life == 6:
         hangman = """
         _______
