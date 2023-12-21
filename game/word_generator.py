@@ -3,7 +3,7 @@ import random
 from typing import List
 
 
-def get_random_word(file_path) -> List[str]:
+def get_random_word(file_path) -> str:
     """
     Retrieves a random word from a file.
 
@@ -11,7 +11,7 @@ def get_random_word(file_path) -> List[str]:
         file_path (str): The path to the file containing the words.
 
     Returns:
-        List[str]: A list containing a randomly chosen word from the file.
+        str: A random word from the file.
 
     Raises:
         FileNotFoundError: If the specified file does not exist.
