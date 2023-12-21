@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 
 
-def get_hangman(life):
+def get_hangman(life: int) -> str:
     """
     Returns the ASCII art representation of the hangman based on the remaining life.
 

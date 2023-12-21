@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 
 
-def masked_word(word):
+def masked_word(word: str) -> str:
     """
     TODO: Implement this method to return a masked version of the given word, where each character is replaced with an asterisk.
 

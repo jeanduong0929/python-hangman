@@ -7,7 +7,7 @@ from typing import List
 # ------------------------------------------------------------------------------
 
 
-def get_random_word(file_path) -> str:
+def get_random_word(file_path: str) -> str:
     """TODO: Implement this method to retrieve a random word from a file.
 
     Args:
