@@ -5,6 +5,31 @@ from word_generator import get_random_word
 from display import get_hangman
 from util import masked_word, update_masked_word
 
+# ------------------------------------------------------------------------------
+# TODO Functions - Implement the logic as per instructions
+# ------------------------------------------------------------------------------
+
+
+def start(life: int, random_word: str) -> None:
+    """
+    TODO: Implement this method to start the hangman game by displaying the hangman interface, initializing the game state,
+    and handling user input for guessing letters. The game continues until the player guesses
+    the word correctly or runs out of lives.
+
+    Args:
+        life (int): The number of lives the player has.
+        random_word (str): The word to be guessed.
+
+    Returns:
+        None
+    """
+    raise NotImplementedError("This function is not implemented yet.")
+
+
+# ------------------------------------------------------------------------------
+# Starter Code - TOUCH AT YOUR OWN RISK!
+# ------------------------------------------------------------------------------
+
 
 def __clear_screen() -> None:
     """
@@ -51,52 +76,6 @@ def __display(life: int, unknown: str, guesses: List[str]) -> None:
     print(f"Life: {life}")
     print(f"Guesses: {', '.join(guesses)}")
     print(f"Word to guess: {unknown}")
-
-
-def start(life: int, random_word: str) -> None:
-    """
-    Starts the hangman game.
-
-    Args:
-        life (int): The number of lives the player has.
-        random_word (str): The word to be guessed.
-
-    Returns:
-        None
-    """
-    guesses = []
-    unknown = masked_word(random_word)
-
-    while life > 0:
-        __display(life, unknown, guesses)
-
-        guess = input("\nGuess a letter: ")
-
-        if guess == "":
-            __message("Please enter a letter!")
-            continue
-
-        if guess in guesses:
-            __message("You already guessed that letter!")
-            continue
-        else:
-            guesses.append(guess)
-
-        if guess not in random_word:
-            life -= 1
-            __message("Incorrect!")
-            continue
-
-        unknown = update_masked_word(random_word, unknown, guess)
-        __message("Correct!")
-
-        if unknown == random_word:
-            break
-
-    if life > 0:
-        __message(f"You win! The word was {random_word}.")
-    else:
-        __message(f"You lose! The word was {random_word}.")
 
 
 if __name__ == "__main__":

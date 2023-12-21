@@ -1,3 +1,8 @@
+# ------------------------------------------------------------------------------
+# Starter Code - TOUCH AT YOUR OWN RISK!
+# ------------------------------------------------------------------------------
+
+
 def get_hangman(life):
     """
     Returns the ASCII art representation of the hangman based on the remaining life.

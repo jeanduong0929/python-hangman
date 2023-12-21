@@ -2,10 +2,13 @@ import os
 import random
 from typing import List
 
+# ------------------------------------------------------------------------------
+# TODO Functions - Implement the logic as per instructions
+# ------------------------------------------------------------------------------
+
 
 def get_random_word(file_path) -> List[str]:
-    """
-    Retrieves a random word from a file.
+    """TODO: Implement this method to retrieve a random word from a file.
 
     Args:
         file_path (str): The path to the file containing the words.
@@ -16,9 +19,4 @@ def get_random_word(file_path) -> List[str]:
     Raises:
         FileNotFoundError: If the specified file does not exist.
     """
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"File {file_path} not found")
-
-    with open(file_path, newline="") as file:
-        words = file.read().splitlines()
-        return random.choices(words)
+    raise NotImplementedError("This function is not implemented yet.")
