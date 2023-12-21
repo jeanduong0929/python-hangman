@@ -101,5 +101,5 @@ def start(life: int, random_word: str) -> None:
 
 if __name__ == "__main__":
     file_path = "resources/words.txt"
-    random_word = get_random_word(file_path)[0]
+    random_word = get_random_word(file_path)
     start(6, random_word)

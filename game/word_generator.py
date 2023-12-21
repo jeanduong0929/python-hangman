@@ -21,4 +21,4 @@ def get_random_word(file_path) -> List[str]:
 
     with open(file_path, newline="") as file:
         words = file.read().splitlines()
-        return random.choices(words)
+        return random.choices(words)[0]
