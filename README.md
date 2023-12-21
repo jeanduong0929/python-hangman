@@ -27,7 +27,7 @@ Hangman is a classic word game in which players guess a word or phrase one lette
 
 In this project, you will engage with Python programming to implement the Hangman game. The game's highlight is its simplicity and the fun it provides while also being a great way to learn and practice Python programming.
 
-# Lab Instructions
+## Lab Instructions
 
 - Complete the 'TODO' methods as outlined in the lab documents.
 - To successfully finish the lab, pass all tests in the tests directory.
